@@ -1,6 +1,6 @@
 // waving animation
 body {
-  background-color: darkkhaki;
+  background-color: #c6dff4 !important ;
 }
 .waving::before {
   content: attr(data-hover);
