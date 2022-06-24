@@ -61,7 +61,7 @@
             <h1 class="h1" dir="rtl" >السلام علیکم</h1>
             <h1 class="h1">I am Kashaan</h1>
             <h1 class="h2">a Front End Developer</h1>
-            <a href="#contact" class="btn btn-lg btn-outline-info my-5" role="button">Contact Me</a>
+            <button type="button" class="btn btn-lg btn-info my-5" data-bs-toggle="modal" data-bs-target="#contactNow" >Contact Now</button>
           </div>
           <div class="col-md-7">
             <img src="./assets/hero-optimized.svg" alt="hero-image" class="img-fluid" id="hero-img">
@@ -69,6 +69,38 @@
         </div>
       </div>
     </section>
+    <section id="modal">
+      <div class="modal fade" id="contactNow" tabindex="-1" aria-labelledby="contactNowLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-light">
+            <div class="modal-header">
+              <h5 class="modal-title" id="contactNowLabel">Write your message</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+            </div>
+            <div class="modal-body">
+              <form name="Messages" method="post" data-netlify="true">
+                <div class="mb-3">
+                  <label for="clientName" class="form-label lead">Your Name</label>
+                  <input type="text" name="clientName" class="form-control" id="clientName" maxlength="20">
+                </div>
+                <div class="mb-3">
+                  <label for="clientEmail" class="form-label lead">Your Email</label>
+                  <input type="email" name="clientEmail" class="form-control" id="clientEmail" aria-describedby="emailHelp">
+                  <div class="form-text" id="emailHelp">Your email won't get shared with anyone else</div>
+                </div>
+                <div class="mb-3">
+                  <label for="clientMessage" class="form-label lead">Your Message</label>
+                  <textarea  id="clientMessage" name="clientMessage" rows="3" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+            </div>
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <section id="tech">
       <div class="container-xxl bg-light">
