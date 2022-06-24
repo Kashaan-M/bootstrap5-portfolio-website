@@ -1,8 +1,7 @@
-
-
-@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
 // waving animation
+body {
+  background-color: darkkhaki;
+}
 .waving::before {
   content: attr(data-hover);
 }

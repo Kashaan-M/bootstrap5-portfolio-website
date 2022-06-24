@@ -1,3 +1,2 @@
 // You can specify which plugins you need
-
-import  'bootstrap';
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
